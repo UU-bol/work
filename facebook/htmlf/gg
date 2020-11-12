@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/4f06ab69fc.js" crossorigin="anonymous"></script>
+    <title>facebook-log in or sign up</title>
+
+    <style>
+        .bd{
+            background-color: #F0F2F5;
+            height: 714px;
+        }
+        .fb1{
+            margin-top: 200px;
+            margin-left: 170px;
+        }
+        .fb2{
+            margin-top: -214px;
+            margin-left: 758px;
+            background-color: white;
+            border-radius: 8px;
+            height: 345px;
+            width: 395px;
+            box-shadow: 0 5px 10px #DBDDDF;
+        }
+        .fb3{
+            background-color:white;
+            width: 84%;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 48px;
+            border-radius: 5px;
+            margin-top: 16px;
+            margin-left: 15px;
+            margin-right: 15x;
+            border: 1px solid #DDDFE2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: #909A9C;
+            box-shadow: 0 0 1px;
+            
+        }
+        .fb3s{
+            background-color:white;
+            width: 84%;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 48px;
+            border-radius: 5px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15x;
+            border: 1px solid #DDDFE2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: #909A9C;
+            box-shadow: 0 0 1px;
+            
+        }
+        .fb3:focus{
+            border: 1px solid blue;
+            outline: none;
+            box-shadow: 0 0px 4px lightskyblue;
+            
+        }
+        .fb3s:focus{
+            border: 1px solid blue;
+            outline: none;
+            box-shadow: 0 0px 4px lightskyblue;
+            
+        }
+        .fb4{
+            background-color: #1877F2;
+            width: 92%;
+            height: 48px;
+            border-radius: 5px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15x;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 48px;
+            border: none;
+            color: white;
+        }
+        .fb4:hover{
+            background-color:#1671e9;
+            outline: none;
+        }
+        .fb5{
+            margin-top: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #1877F2;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        .fb5:hover{
+            text-decoration: underline;
+        }
+        .fb6{
+            background-color: #DADDE1;
+            width: 92%;
+            height: 1px;
+            margin-top: 19px;
+            margin-left: 15px;
+            margin-right: 15x;
+        }
+        .fb7{
+            background-color: #42B72A;
+            width: 50%;
+            height: 48px;
+            border-radius: 7px;
+            margin-top: 26px;
+            margin-left: 98px;
+            margin-right: 98x;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 48px;
+            border: none;
+            color: white;
+        }
+        .fb7:hover{
+            background-color: #3eb127;
+            outline: none;
+        }
+        .fb8{
+            margin-top: 28px;
+            margin-left: 806px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+        .fb9{
+            font-weight: 700;
+            line-height: 19px;
+            text-decoration: none;
+            color: black;
+        }
+        .fb9:hover{
+            text-decoration: underline;
+        }
+        footer {
+        height: 150px;
+        width: 101.1%;
+        background-color: #FFF;
+        padding-bottom: 40px;
+        margin-top: 206px;
+        margin-left: -7px;
+        }
+        #footersubdiv {
+        height: 100%;
+        width: 980px;
+        margin: auto;
+        }
+        #languagediv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 20px;
+        padding: 8px 0 8px 0;
+        width: inherit;
+        margin-top: 43px;
+        }
+        .language {
+        font-size: 12px;
+        display: inline-block;
+        padding-right: 10px;
+        }
+        #currentlang {
+        color:#737373;
+        }
+        #morelang {
+        display: inline-block;
+        height: 19.5px;
+        width: 29px;
+        background-color: #f5f6f7;
+        border: 1px solid rgb(204, 208, 213);
+        position: relative;
+        }
+        #morelang:hover {
+        background-color: #EBEDF0;
+        }
+        footer #languagediv .fa {
+        color:#737373;
+        font-size: 12px;
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-5.5px, -5.5px);
+        }
+  
+        #hrfinal {
+        width: 980px;
+        border: 0.5px solid #DDDFE2;
+        margin: auto;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        }
+        #extralinksdiv {
+        height: 57px;
+        width: inherit;
+        }
+        .extralinks {
+        font-size: 12px;
+        display: inline-block;
+        padding-right: 14px;
+        }
+  
+        #copyrightdiv {
+        font-size: 11px;
+        color:#737373;
+        margin-top: 33px;
+        }
+        #copyrightfblink {
+        color:#737373;
+        }
+        #copyright {
+        float: left;
+        }
+        #disclaimer {
+        float: right;
+  
+        }
+        footer #copyrightdiv .fa {
+        color:#737373;
+        font-size: 14px;
+        }
+
+        .language{
+        color:#737373;
+        text-decoration: none;
+        }
+        .language:hover{
+        text-decoration: underline;
+      
+        }
+        .extralinks{
+        color: #737373;
+        text-decoration: none;
+        }
+        .extralinks:hover{
+        text-decoration: underline;
+        }
+        @media screen and (max-width: 1024px){
+            body.bd{
+                background-color: white;
+            }
+            div.fb1, .fb8{
+                display: none;
+            }
+            a.sx{
+                display: none;
+            }
+            footer{
+                display: none
+            }
+            div.hx{
+                background-color: #FFFBE2;
+                display: block;
+                margin-top: -19px;
+                margin-left: -8px;
+                margin-right: 0px;
+                width: 1024px;
+                height: 50px; 
+            }
+            img.imgx{
+                display: block;
+                width: 18px; 
+                height: 33px; 
+                margin-left: 16px; 
+                margin-top: 20px;
+                padding-top: 7px;
+            }
+            div.hxx{
+                display: block;
+                margin-top: -24px;
+                margin-left: 42px;
+                margin-right: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 14px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #52668f;    
+            }
+            div.hx1{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                width: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 16px;
+                font-size: 20px;
+                font-weight: 800;
+                color: #2081ff;
+                letter-spacing: -1px;
+                
+            }
+            div.fb2{
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 10px;
+                height: 345px;
+                width: 425px;
+                border-radius: 0px;
+                box-shadow: none;
+            }
+            input.fb3, .fb3s{
+                background-color: #F5F6F7;
+                width: 90%;
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 40px;
+                border-radius: 5px;
+                margin-top: 7px;
+                margin-left: 0px;
+                margin-right: 15x;
+                border: 1px solid #DDDFE2;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: black;
+                box-shadow: none;
+            
+            }
+            input.fb3:focus{
+                border: 1px solid rgb(202, 149, 50);
+                outline: none;
+                box-shadow: none;
+            }
+            input.fb3s:focus{
+                border: 1px solid rgb(202, 149, 50);
+                outline: none;
+                box-shadow: none;
+            }
+            button.fb4{
+                background-color: #1877F2;
+                width: 98%;
+                height: 40px;
+                border-radius: 5px;
+                margin-top: 9px;
+                margin-left: 0px;
+                margin-right: 15x;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                border: none;
+                color: white;
+            }
+            button.fb4:hover{
+                background-color:#1671e9;
+                outline: none;
+            }
+            div.fb6{
+                background-color: #DADDE1;
+                width: 44%;
+                height: 1px;
+                margin-top: 19px;
+                margin-left: 0px;
+                margin-right: 15x;
+            }
+            div.fb6s{
+                background-color: #DADDE1;
+                width: 44%;
+                height: 1px;
+                margin-top: -8px;
+                margin-left: 225px;
+                margin-right: 15x;
+            }
+            span.vx{
+                display: block;
+                margin-top: -10px;
+                margin-left: 200px;
+            }
+            button.fb7{
+                background-color: #00A400;
+                width: 40%;
+                height: 38px;
+                border-radius: 4px;
+                margin-top: 26px;
+                margin-left: 123px;
+                margin-right: 98x;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: center;
+                border: none;
+                color: white;
+            }
+            a.fx{
+                margin-top: 14px;
+                margin-left: 135px;
+                width: 150px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 19px;
+                color: #3b93be;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+            }
+            div.ax{
+                display: block;
+                width: 120px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #6e93b1;
+                margin-left: 195px;
+                text-align: center;
+                margin-top: -28px;
+
+            }
+            div.axx{
+                display: block;
+                width: 120px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #6e93b1;
+                margin-left: 695px;
+                text-align: center;
+                margin-top: -78px;
+
+            }
+            span.ax2{
+                width: 100px;
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 13px;
+                margin-left: 8px;
+                margin-top: 2px;
+                color: #808080;
+            }
+            div.ax3{
+                width: 100px;
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 13px;
+                margin-left: 46px;
+                margin-top: 12px;
+                color: #808080;
+            }
+            div.ax1{
+                width: 150px;
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 13px;
+                margin-left: 455px;
+                margin-top: 20px;
+                color: #8f7867;
+            }
+            
+        }
+        .hx,.hx1,.vx,.fx,.ax,.ax1,.ax2,.ax3,.axx,.imgx{
+            display: none;
+        }
+        
+    </style>
+
+</head>
+<body class="bd">
+    <div class="fb1">
+        <img src="../imagesf/fb1.png">
+    </div>
+
+    <div class="hx">
+        <img class="imgx" src="../imagesf/fb0.jpg">
+        <div class="hxx">Get Facebook for Android and browse faster.</div> 
+
+    </div>
+    
+    <div class="hx1">facebook</div>
+
+    <div class="fb2">
+        <input class="fb3" placeholder="Email address or phone number">
+        <input class="fb3s" placeholder="Password">
+        <button class="fb4">Log In</button>
+        <a href="forgot.html" class="sx fb5">Forgotten password?</a>
+        <div class="fb6"></div> 
+        <span class="vx">or</span> 
+        <div class="fb6s"></div> 
+        <button class="fb7">Create New Account</button>
+        <a href="forgot.html" class="fx fb5">Forgotten password?</a>
+    </div>
+    <div class="ax">
+        <span class="ax2">English (UK)</span><br>
+        <div style="margin-top: -15px;">
+            Português (Brasil)<br>
+            Español<br>
+            Deutsch
+        </div> 
+    </div>
+    <div class="axx">
+        <span class="ax2">Hausa</span><br>
+        <div style="margin-top: -15px;">
+            Français (France)<br>
+            ಕನ್ನಡ<br>
+            <i class="far fa-plus-square"></i>
+        </div> 
+        
+    </div>
+    <div class="ax1">About <span style="color: black;">·</span> Help 
+        <span style="color: black;">·</span> More</div>
+    <div class="ax3"> Facebook Inc.</div>
+    <div class="fb8">
+        <a class="fb9">Create a Page</a>
+        <span>for a celebrity, band or business.</span>
+    </div>
+
+    <footer>
+        <div id="footersubdiv">
+          <div id="languagediv">
+            <a href="#" class="language" id="currentlang">English (UK)</a>
+            <a href="#" class="language">മലയാളം</a>
+            <a href="#" class="language">தமிழ்</a>
+            <a href="#" class="language">ಕನ್ನಡ</a>
+            <a href="#" class="language">हिन्दी</a>
+            <a href="#" class="language">اردو</a>
+            <a href="#" class="language">বাংলা</a>
+            <a href="#" class="language">తెలుగు </a>
+            <a href="#" class="language">Español</a>
+            <a href="#" class="language">Português (Brasil)</a>
+            <a href="#" class="language">Français (France)</a>
+            <a href="#" id="morelang"><i class="fa fa-plus" aria-hidden="true"></i></a>
+          </div>
+          <hr id="hrfinal">
+          <div id="extralinksdiv">
+            <a href="#" class="extralinks">Sign Up</a>
+            <a href="#" class="extralinks">Log In</a>
+            <a href="#" class="extralinks">Messenger</a>
+            <a href="#" class="extralinks">Facebook Lite</a>
+            <a href="#" class="extralinks">Find Friends</a>
+            <a href="#" class="extralinks">People</a>
+            <a href="#" class="extralinks">Profiles</a>
+            <a href="#" class="extralinks">Pages</a>
+            <a href="#" class="extralinks">Page categories</a>
+            <a href="#" class="extralinks">Places</a>
+            <a href="#" class="extralinks">Games</a>
+            <a href="#" class="extralinks">Locations</a>
+            <a href="#" class="extralinks">Marketplace</a>
+            <a href="#" class="extralinks">Groups</a>
+            <a href="#" class="extralinks">Instagram</a>
+            <a href="#" class="extralinks">Local</a>
+            <a href="#" class="extralinks">Fundraisers</a>
+            <a href="#" class="extralinks">About</a>
+            <a href="#" class="extralinks">Create ad</a>
+            <a href="#" class="extralinks">Create Page</a>
+            <a href="#" class="extralinks">Developers</a>
+            <a href="#" class="extralinks">Careers</a>
+            <a href="#" class="extralinks">Privacy</a>
+            <a href="#" class="extralinks">Cookies</a>
+            <a href="#" class="extralinks">AdChoices</a>
+            <a href="#" class="extralinks">Terms</a>
+            <a href="#" class="extralinks">Account security</a>
+            <a href="#" class="extralinks">Login help</a>
+            <a href="#" class="extralinks">Help</a>
+          </div>       <div id="createpage">
+      
+          <div id="copyrightdiv">
+              <span id="copyright"><a href="https://www.facebook.com" target="_blank" id="copyrightfblink">Facebook</a> © 2020</span>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+    <script src="../bootstrap/js/popper.min.js"></script>
+    <script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
